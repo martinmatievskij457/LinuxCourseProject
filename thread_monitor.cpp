@@ -180,7 +180,7 @@ ProcessInfo get_process_info(int pid, const map<int, pair<long, long>>& prev_cpu
             iss >> uid;
             info.user = get_username(uid);
         } else if (line.substr(0, 6) == "State:") {
-            info.state = line.substr(7, 1);  // Первый символ состояния
+            info.state = line.substr(7, 1);
         }
     }
     
